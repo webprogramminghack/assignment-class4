@@ -1,22 +1,22 @@
-header{
-  background-color: #53389E;
+header {
+  background-color: #53389e;
 }
-header .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 5rem;
-    position: relative;
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  position: relative;
 }
-.logo-nav-wrapper{
+.logo-nav-wrapper {
   display: flex;
   align-items: center;
   gap: 2.5rem;
 }
-nav ul{
-  gap:2rem;
+nav ul {
+  gap: 2rem;
   list-style: none;
-  display: flex;
+  display: none;
   align-items: center;
 }
 header nav ul li a {
@@ -25,145 +25,12 @@ header nav ul li a {
   font-size: 1rem;
   font-weight: 600;
 }
-header .header-actions{
-  display: flex;
+header .header-actions {
+  display: none;
   align-items: center;
-  gap:0.8rem;
+  gap: 0.8rem;
 }
-header .header-actions .btn{
-  height: 3rem;
-  padding: 0.6rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.5rem;
-  border-radius: 0.5rem;
-  color:#ffffff;
-}
-header .header-actions .btn-primary{
-  background-color: #7F56D9;
-}
-
-.pricing-header{
-  background-color: #53389E;
-  color:#E9D7FE;
-  text-align: center;
-  height: 25.375rem;
-}
-.pricing-header .container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-.pricing-header .container .subtitle{
-  line-height: 1.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-}
-.pricing-header .container .title{
-  line-height: 3.75rem;
-  font-size: 3rem;
-  font-weight: 600;
-  margin-top:.8rem;
-  margin-bottom:1.5rem;
-  color:#fff;
-}
-.pricing-header .container .description{
-  line-height: 1.875rem;
-  font-size: 1.3rem;
-  font-weight: 400;
-}
-
-.pricing-cards{
-  margin-top:-5rem;
-  margin-bottom:6rem ;
-}
-.pricing-cards .container{
-  display: flex;
-  gap:2rem;
-}
-.pricing-cards .container .card{
-  border:1px solid #E4E7EC;
-  padding:2rem;
-  border-radius: 1rem;
-  background-color: #fff;
-  width: 100%;
-}
-.card-header{
-  text-align: center;
-}
-
-.badge-container{
-  border:1px solid #D0D5DD;
-  border-radius: .6rem;
-  padding:.3rem;
-  display: flex;
-  width: fit-content;
-  align-items: center;
-  margin:0 auto;
-  font-weight: 500;
-  font-size:.9rem;
-  gap:.4rem;
-  color: rgba(52, 64, 84, 1);
-}
-.badge-container .badge{
-  border:1px solid #D0D5DD;
-  border-radius: .4rem;
-  padding:.125rem .5rem;
-  display: flex;
-  align-items: center;
-  gap:.4rem;
-}
-.badge-container .badge .badge-info{
-  line-height: 1.3rem;
-}
-.badge-container .badge .dot-decoration-wrapper{
-  border:.19rem solid rgba(244, 235, 255, 1);
-  border-radius: 50%;
-}
-.badge-container .badge .dot-decoration{
-  width: .4rem;
-  height: .4rem;
-  border-radius: 50%;
-  background-color: #9E77ED;
-}
-
-.card-header .price {
-  color:rgba(16, 24, 40, 1);
-  font-weight: 600;
-  font-size: 3rem;
-  line-height: 3.75rem;
-  margin-top:1.5rem;
-}
-.card-header .description{
-  color: rgba(71, 84, 103, 1);
-  font-size:1rem;
-  margin-top:.5rem;
-}
-.card-features{
-  border-top:1px solid rgba(228, 231, 236, 1);
-  border-bottom:1px solid rgba(228, 231, 236, 1);
-  margin-top:2rem;
-  padding:2.0625rem 0;
-}
-.card-features ul{
-  gap:1rem;
-  display: flex;
-  flex-direction: column;
-}
-.card-features ul li{
-  display: flex;
-  align-items: center;
-  line-height: 1.5rem;
-  gap:.8rem;
-  color:rgba(71, 84, 103, 1);
-}
-.pricing-cards .container .card .btn{
-  background-color: #7F56D9;
+header .header-actions .btn {
   height: 3rem;
   padding: 0.6rem 1rem;
   display: flex;
@@ -174,68 +41,212 @@ header .header-actions .btn-primary{
   line-height: 1.5rem;
   border-radius: 0.5rem;
   color: #ffffff;
-  margin-top:2rem;
 }
-.hamburgerbar{
-  display: none;
-}
-
-@media only screen and (max-width: 1024px) {
-  .pricing-cards .container{
-    gap:1rem;
-  }
-  .pricing-cards .container .card{
-    padding:1rem;
-  }
-  .card-header .price{
-    font-size: 2.6rem;
-  }
+header .header-actions .btn-primary {
+  background-color: #7f56d9;
 }
 
-@media only screen and (max-width: 768px) {
-  header .header-actions{
-    display: none;
+.pricing-header {
+  background-color: #53389e;
+  color: #e9d7fe;
+  text-align: center;
+  height: 21.25rem;
+}
+.pricing-header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: star;
+  height: 100%;
+}
+.pricing-header .container .subtitle {
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 4rem;
+}
+.pricing-header .container .title {
+  line-height: 2.75rem;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 0.8rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+.pricing-header .container .description {
+  line-height: 1.75rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.pricing-cards {
+  margin-top: -5rem;
+  margin-bottom: 6rem;
+}
+.pricing-cards .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.pricing-cards .container .card {
+  border: 1px solid #e4e7ec;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  width: 100%;
+}
+.card-header {
+  text-align: center;
+}
+
+.badge-container {
+  border: 1px solid #d0d5dd;
+  border-radius: 0.6rem;
+  padding: 0.3rem;
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 0.9rem;
+  gap: 0.4rem;
+  color: rgba(52, 64, 84, 1);
+}
+.badge-container .badge {
+  border: 1px solid #d0d5dd;
+  border-radius: 0.4rem;
+  padding: 0.125rem 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.badge-container .badge .badge-info {
+  line-height: 1.3rem;
+}
+.badge-container .badge .dot-decoration-wrapper {
+  border: 0.19rem solid rgba(244, 235, 255, 1);
+  border-radius: 50%;
+}
+.badge-container .badge .dot-decoration {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: #9e77ed;
+}
+
+.card-header .price {
+  color: rgba(16, 24, 40, 1);
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  margin-top: 1.5rem;
+}
+.card-header .description {
+  color: rgba(71, 84, 103, 1);
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+.card-features {
+  border-top: 1px solid rgba(228, 231, 236, 1);
+  border-bottom: 1px solid rgba(228, 231, 236, 1);
+  margin-top: 2rem;
+  padding: 2.0625rem 0;
+}
+.card-features ul {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.card-features ul li {
+  display: flex;
+  align-items: center;
+  line-height: 1.5rem;
+  gap: 0.8rem;
+  color: rgba(71, 84, 103, 1);
+}
+.pricing-cards .container .card .btn {
+  background-color: #7f56d9;
+  height: 3rem;
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  margin-top: 2rem;
+}
+.hamburgerbar {
+  display: block;
+}
+
+/* @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .pricing-cards .container {
+    gap: 1rem;
   }
-  .hamburgerbar{
-    display: block;
-  }
-  .pricing-cards .container{
-    flex-direction: column;
-  }
-  .pricing-header .container .subtitle{
-    font-size: 0.9rem;
-  }
-  .pricing-header .container .title{
-    font-size:2rem;
-    line-height: 3rem;
-  }
-  .pricing-header .container .description{
-    font-size:1.1rem;
+  .pricing-cards .container .card {
+    padding: 1rem;
   }
   .card-header .price {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 2.6rem;
+  }
+} */
+
+@media only screen and (min-width: 768px) {
+  header .header-actions {
+    display: flex;
+  }
+  .hamburgerbar {
+    display: none;
+  }
+  .pricing-header .container {
+    justify-content: center;
+  }
+  .pricing-header .container .subtitle {
+    font-size: 1rem;
+    margin-top: unset;
+  }
+  .pricing-header {
+    height: 25.375rem;
+  }
+  .pricing-header .container .title {
+    font-size: 3rem;
+    line-height: 3.7rem;
+  }
+  .pricing-header .container .description {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+  .card-header .price {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+  .pricing-cards .container {
+    flex-direction: row;
   }
   .pricing-cards .container .card {
     padding: 1.5rem;
   }
-  nav{
+  nav ul {
+    display: flex;
+  }
+  /* nav {
     position: absolute;
     top: 4.6rem;
     left: 0;
     width: 100%;
     padding: 0 2rem;
-    background: #7F56D9;
+    background: #7f56d9;
   }
-  nav ul{
+  nav ul {
     flex-direction: column;
     align-items: baseline;
     max-height: 0;
     overflow: hidden;
-  }
-
+  } */
 }
 
 @media only screen and (max-width: 640px) {
-  
 }
