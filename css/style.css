@@ -118,6 +118,8 @@ header > .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: fit-content;
+  margin: 0 auto;
   border: 0.0625rem solid #d0d5dd;
   border-radius: 0.625rem;
   padding: 0.1875rem;
