@@ -7,6 +7,7 @@ header > .container {
   padding: 0 1rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo-nav-wrapper {
@@ -32,8 +33,7 @@ header > .container {
   align-items: center;
 }
 
-.header-actions .btn-primary,
-.header-actions .btn-secondary {
+.header-actions .btn {
   align-items: center;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -49,9 +49,13 @@ header > .container {
 }
 
 .logo-nav-wrapper nav,
-.header-actions .btn-secondary,
-.header-actions .btn-primary {
+.header-actions .btn {
   display: none;
+}
+
+.hamburger-icon {
+  width: 1.125rem;
+  height: 0.75rem;
 }
 
 .pricing-header {
@@ -99,7 +103,7 @@ header > .container {
 .pricing-cards > .container {
   display: flex;
   padding: 0 1rem;
-  gap: 2rem;
+  gap: 1rem;
   flex-wrap: wrap;
   flex: 1 0 fit-content;
 }
@@ -108,7 +112,7 @@ header > .container {
   background-color: #fff;
   border: 0.0625rem solid #e4e7ec;
   border-radius: 1rem;
-  padding: 1.5rem 1.5rem 1.5rem 2rem;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
   flex: 1 0 fit-content;
 }
 
@@ -134,7 +138,6 @@ header > .container {
   border-radius: 0.375rem;
   border: 0.0625rem solid #d0d5dd;
   padding: 0 0.5rem;
-  height: 1.5rem;
   color: #475467;
 }
 
@@ -212,7 +215,6 @@ header > .container {
   justify-content: center;
   height: 3rem;
   margin-top: 1.5rem;
-  padding: 0 6.4375rem;
   background-color: #7f56d9;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -228,11 +230,11 @@ header > .container {
   }
 
   .logo-nav-wrapper nav,
-  .header-actions .btn-secondary,
-  .header-actions .btn-primary {
+  .header-actions .btn {
     display: flex;
   }
-  .btn-hamburger {
+
+  .hamburger-icon {
     display: none;
   }
 
@@ -265,6 +267,7 @@ header > .container {
 
   .pricing-cards > .container {
     padding: 0 2rem;
+    gap: 2rem;
   }
 
   .card {
