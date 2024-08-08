@@ -4,63 +4,59 @@ header {
 header .container {
   display: flex;
   justify-content: space-between;
-  padding: 18px 80px;
+  padding: 1rem 24px;
 }
-.logo-nav-wrapper {
+.logo {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.logo {
   fill: white;
   flex-shrink: 0;
 }
-nav ul {
-  display: flex;
-  gap: 32px;
-  margin: 0px 40px;
+nav ul li a {
+  display: none;
 }
-header .container a {
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-  margin: 0px;
-}
-
 .header-actions {
   display: flex;
-  gap: 16px;
+  position: relative;
+  bottom: 3px;
   align-items: center;
 }
-
-.btn.btn-primary {
-  background-color: #7f56d9;
-  border-radius: 8px;
-  padding: 18px;
+.header-actions::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url('../assets/svg/icon-humberger.svg');
+  background-repeat: no-repeat;
+}
+.header-actions > .btn {
+  display: none;
 }
 .pricing-header {
   background-color: #53389e;
+  text-align: center;
 }
 .pricing-header .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  padding: 96px 80px 160px;
+  padding: 76px 1rem 140px;
   color: white;
 }
 .subtitle {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
 }
 .title {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  margin-top: 12;
-  margin-bottom: 24;
+  margin-top: 12px;
+  margin-bottom: 24px;
 }
 .description {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
 }
 .pricing-cards .container {
@@ -68,9 +64,8 @@ header .container a {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  flex: 1 1 calc(33.3333% - 32px); 
-  gap: 32px;
-  padding: 0px 112px;
+  padding: 0px 1rem;
+  gap: 1rem;
 }
 .card {
   background-color: #ffffff;
@@ -78,12 +73,15 @@ header .container a {
   border-radius: 16px;
   position: relative;
   top: -80px;
+  width: 100%;
 }
 .card-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  white-space: nowrap;
+  text-align: center;
   padding: 32px;
   position: relative;
 }
@@ -94,7 +92,7 @@ header .container a {
   height: 1px;
   background-color: #e4e7ec;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
 }
 .badge-container {
   display: inline-flex;
@@ -139,12 +137,10 @@ header .container a {
 .badge-info {
   font-size: 14px;
   padding: 2px 6px;
-  white-space: nowrap;
 }
 .badge-additional-info {
   font-size: 14px;
   padding: 6px 12px;
-  white-space: nowrap;
 }
 .card-header .price {
   font-size: 48px;
@@ -153,10 +149,9 @@ header .container a {
   margin-bottom: 8px;
 }
 .card-header .description {
-  font-size: 0.9rem;
+  font-size: 14px;
   font-weight: 400;
   color: #475467;
-  text-align: center;
 }
 .card-features {
   padding: 32px;
@@ -170,7 +165,7 @@ header .container a {
 .card-features ul li {
   display: flex;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 14px;
   font-weight: 400;
   color: #475467;
 }
@@ -188,7 +183,7 @@ header .container a {
   height: 1px;
   background-color: #e4e7ec;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
 }
 
 .card-features ~ .btn {
@@ -199,7 +194,7 @@ header .container a {
   background-color: #7f56d9;
   margin: 32px;
   color: white;
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: 500;
   border-radius: 8px;
 }
@@ -211,116 +206,167 @@ xl	1280px	@media (min-width: 1280px) { ... }
 2xl	1536px	@media (min-width: 1536px) { ... } */
 
 /* Mobile */
-@media (max-width: 768px) {
-  header .container {
-    padding: 1rem 24px;
-  }
-  .pricing-header .container {
-    padding: 76px 1rem 140px;
-  }
-  .pricing-cards .container {
-    padding: 0px 1rem;
-    gap: 1rem;
-    flex: 1 1 fit-content;
-    justify-content: center;
-  }
-  .card {
-    width: 100%;
-  }
-
-  header .container a {
-    font-size: 14px;
-  }
-  .subtitle {
-    font-size: 14px;
-  }
-  .title {
-    font-size: 1.5rem;
-  }
-  .description {
-    font-size: 18px;
-  }
-  .card-features ~ .btn {
-    font-size: 14px;
-  }
-  .card-header .description {
-    font-size: 14px;
-  }
-  .card-features ul li {
-    font-size: 14px;
-  }
-
+@media (min-width: 768px) {
   nav ul li a {
-    display: none;
-  }
-  .header-actions::before {
-    content: '';
     display: block;
-    width: 24px;
-    height: 24px;
-    background-image: url('../assets/svg/icon-humberger.svg');
-    background-repeat: no-repeat;
   }
   .header-actions > .btn {
+    display: block;
+  }
+  .header-actions::before {
     display: none;
   }
-}
 
-/* Tablet,this is an example of the default layout that we use in assignment 3, so you dont scroll up back */
-@media (min-width: 768px) {
-  /* header .container a {
-    font-size: 16px;
-  }
-  .subtitle {
-    font-size: 16px;
-  }
-  .title {
-    font-size: 3rem;
-  }
-  .description {
-    font-size: 20px;
-  }
-  .card-features ~ .btn {
-    font-size: 18px;
-  }
-  .card-header .description {
-    font-size: 17px;
-  }
-  .card-features ul li {
-    font-size: 17px;
-  } */
-
-  /* header .container {
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 18px 80px;
   }
+  .logo-nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo {
+    position: relative;
+    top: 1px;
+  }
+  nav ul {
+    display: flex;
+    gap: 32px;
+    margin: 0px 40px;
+  }
+  header .container a {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0px;
+    color: white;
+  }
+  .header-actions {
+    gap: 16px;
+    text-wrap: nowrap;
+    position: none;
+    bottom: 0px;
+    align-items: none;
+  }
+  .btn.btn-primary {
+    background-color: #7f56d9;
+    border-radius: 8px;
+    padding: 18px;
+  }
+
   .pricing-header .container {
     gap: 16px;
     padding: 96px 80px 160px;
+  }
+  .subtitle {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-bottom: 24px;
+  }
+  .description {
+    font-size: 20px;
+    font-weight: 400;
   }
   .pricing-cards .container {
     gap: 32px;
     padding: 0px 112px;
   }
-
-  .btn.btn-primary {
-    padding: 18px;
+  .card {
+    flex: 1 1 0;
+    border: 1px solid #e4e7ec;
+    border-radius: 16px;
+    position: relative;
+    top: -80px;
+    flex: 1 0 calc(100% / 3 - 2rem);
   }
   .card-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 32px;
+    position: relative;
   }
+  .card-header::after {
+    width: calc(100% - 64px);
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+  }
+  .badge-container {
+    margin-bottom: 24px;
+    height: 32px;
+    border-radius: 10px;
+    border: 1px solid #d0d5dd;
+  }
+
   .badge {
     padding: 4px;
+    margin: 6px;
+    height: 24px;
+    border-radius: 6px;
+    border: 1px solid #d0d5dd;
+  }
+  .dot-decoration-wrapper {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+  }
+  .dot-decoration {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
   }
   .badge-info {
+    font-size: 14px;
     padding: 2px 6px;
   }
   .badge-additional-info {
+    font-size: 14px;
     padding: 6px 12px;
+  }
+  .card-header .price {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .card-header .description {
+    font-size: 0.9rem;
+    font-weight: 400;
   }
   .card-features {
     padding: 32px;
+    position: relative;
   }
+  .card-features ul {
+    gap: 16px;
+  }
+  .card-features ul li {
+    text-wrap: nowrap;
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  .card-features ul li img {
+    margin-right: 12px;
+  }
+  .card-features::after {
+    width: calc(100% - 64px);
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+  }
+
   .card-features ~ .btn {
     padding: 12px;
-  } */
+    margin: 32px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+  }
 }
