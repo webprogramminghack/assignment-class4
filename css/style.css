@@ -269,4 +269,8 @@ header > .container {
     font-size: 3rem;
     line-height: 3.75rem;
   }
+
+  .pricing-cards .btn {
+    margin-top: 2rem;
+  }
 }
