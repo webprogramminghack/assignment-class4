@@ -1,0 +1,276 @@
+header {
+  background-color: #53389e;
+}
+
+header > .container {
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-nav-wrapper {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.logo-nav-wrapper ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.logo-nav-wrapper ul li a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.header-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.header-actions .btn {
+  align-items: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  height: 2.75rem;
+  padding: 0 1rem;
+}
+
+.btn-primary {
+  background-color: #7f56d9;
+  border-radius: 0.5rem;
+}
+
+.logo-nav-wrapper nav,
+.header-actions .btn {
+  display: none;
+}
+
+.hamburger-icon {
+  width: 1.125rem;
+  height: 0.75rem;
+}
+
+.pricing-header {
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  background-color: #53389e;
+  text-align: center;
+}
+
+.pricing .pricing-header .container .subtitle {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #e9d7fe;
+  font-weight: 600;
+}
+
+.pricing .pricing-header .container .title {
+  margin-top: 0.75rem;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  color: #fff;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.pricing .pricing-header .container .description {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #e9d7fe;
+  font-weight: 400;
+}
+
+.pricing-cards {
+  display: flex;
+  margin-top: -4rem;
+}
+
+.pricing-cards > .container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex: 1 0 fit-content;
+}
+
+.card {
+  background-color: #fff;
+  border: 0.0625rem solid #e4e7ec;
+  border-radius: 1rem;
+  padding: 1.5rem 1.5rem 2rem 1.5rem;
+  flex: 1 0 fit-content;
+}
+
+.card-header {
+  padding-bottom: 2rem;
+}
+
+.badge-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+  border: 0.0625rem solid #d0d5dd;
+  border-radius: 0.625rem;
+  padding: 0.1875rem;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  border-radius: 0.375rem;
+  border: 0.0625rem solid #d0d5dd;
+  padding: 0 0.5rem;
+  color: #475467;
+}
+
+.badge-info {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: #475467;
+}
+.badge-additional-info {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  color: #475467;
+  padding: 0 0.75rem;
+}
+
+.dot-decoration-wrapper {
+  border: 0.1875rem solid #f4ebff;
+  border-radius: 50%;
+}
+
+.dot-decoration {
+  width: 0.375rem;
+  height: 0.375rem;
+  background: #9e77ed;
+  border-radius: 50%;
+}
+
+.price {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 2.75rem;
+  margin-top: 1.5rem;
+}
+
+.card .card-header .description {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-top: 0.5rem;
+  color: #475467;
+}
+
+.card-features {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 0.0625rem solid #e4e7ec;
+  border-bottom: 0.0625rem solid #e4e7ec;
+}
+
+.card-features ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-features ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #475467;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.pricing-cards .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  margin-top: 1.5rem;
+  background-color: #7f56d9;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  header > .container {
+    height: 5rem;
+  }
+
+  .logo-nav-wrapper nav,
+  .header-actions .btn {
+    display: flex;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+
+  .pricing-header {
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .pricing .pricing-header .container .subtitle {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .pricing .pricing-header .container .title {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+
+  .pricing .pricing-header .container .description {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  .pricing-cards {
+    margin-top: -6rem;
+  }
+
+  .pricing-cards > .container {
+    gap: 2rem;
+  }
+
+  .card {
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+
+  .price {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+
+  .pricing-cards .btn {
+    margin-top: 2rem;
+  }
+}
